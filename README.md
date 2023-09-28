@@ -1,7 +1,7 @@
 ﻿# DotPulsar
 
 dmsadmiosadioasjmo
-
+mdmiasjdioas
 ![CI - Unit](https://github.com/apache/pulsar-dotpulsar/workflows/CI%20-%20Unit/badge.svg)
 
 The official .NET client library for [Apache Pulsar](https://pulsar.apache.org/).
