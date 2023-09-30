@@ -21,5 +21,5 @@ jobs:
         run: |
           echo 'Dotnet Version: ${{ steps.setupstep.outputs.dotnet-version }}'
           dotnet tool update -g docfx
-          dotnet build -p:TargetFramework=net7.0
+          dotnet build -p:TargetFramework=net7.0 --property WarningLevel=0
           docfx docs/api/docfx.json
