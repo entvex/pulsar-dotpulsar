@@ -160,7 +160,7 @@ public sealed class MessageId : IEquatable<MessageId>, IComparable<MessageId>
     /// When this method returns, contains the MessageId equivalent of the string contained in s, if the conversion succeeded, or MessageId.Earliest if the conversion failed.
     /// The conversion fails if the s parameter is null or Empty, or is not of the correct format.
     /// This parameter is passed uninitialized; any value originally supplied in result will be overwritten.
-    /// </param>
+    /// </am>
     /// <returns> true if the string was converted successfully; otherwise, false. </returns>
     public static bool TryParse(string s, out MessageId result)
     {
