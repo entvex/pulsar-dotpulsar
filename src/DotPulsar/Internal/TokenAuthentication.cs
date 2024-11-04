@@ -20,7 +20,10 @@ public sealed class TokenAuthentication : IAuthentication
 {
     private readonly Func<CancellationToken, ValueTask<string>> _tokenSupplier;
 
-    public TokenAuthentication(string token) => _tokenSupplier = (cancellationToken) => new ValueTask<string>(token);
+    public TokenAuthentication(string token)
+    {
+        _tokenSupplier = (cancellationToken) => new ValueTask<string>(token);
+    }
 
     public TokenAuthentication(Func<CancellationToken, ValueTask<string>> tokenSupplier) => _tokenSupplier = tokenSupplier;
 

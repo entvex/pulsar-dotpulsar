@@ -31,4 +31,10 @@ public static class AuthenticationFactory
     /// Create an authentication provider for token based authentication.
     /// </summary>
     public static IAuthentication Token(Func<CancellationToken, ValueTask<string>> tokenSupplier) => new TokenAuthentication(tokenSupplier);
+
+    /// <summary>
+    /// Create an authentication provider for token based authentication.
+    /// </summary>
+    public static IAuthentication Token(string token) => new AuthenticationBasic(token);
+
 }
